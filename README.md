@@ -2,7 +2,7 @@
 TeamLiga~Console für Karopapier.de
 
 Die TeamLiga~Console übernimmt Aufgaben rund um die TeamLiga auf karopapier.de und ist eine Java-Consolen-Application.
-Der aktuelle Stand wurde mobil mit "AIDE" geschrieben.
+Der erste Stand wurde mobil mit "AIDE" geschrieben, wurde aber angepasst für allgemeine CLI mit OpenJDK.
 
 Aktuelle Funktionen:
 + Spielauswertung nach GID
