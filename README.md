@@ -31,8 +31,10 @@ Nutzung auf Android Geräten:
 + installiere OpenJDK in ArchLinux via pacman
 Sollte es mit pacman anfangs Probleme geben können folgende Links helfen:
 https://bbs.archlinux.de/viewtopic.php?id=28800
-https://bbs.archlinux.org/viewtopic.php?id=143337
 
+https://bbs.archlinux.org/viewtopic.php?id=143337
+pacman-key --init
+pacman-key --populate archlinuxarm (wenn in Termux installiert)
 
 
 Hinweis: Programmierkenntnisse habe ich mir selber angeeignet.
