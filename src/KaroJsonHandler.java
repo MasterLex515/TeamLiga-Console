@@ -15,33 +15,44 @@ public class KaroJsonHandler
 		try {
 			//convert JSONString to Object
 			JSONObject objTL = new JSONObject(karoJsonString);
-			Integer objLenght = objTL.length();
+			//Integer objLenght = objTL.length();
+
+			Integer gid = objTL.getInt("id");
+			System.out.println("GID: "+gid);
+			String gameName = objTL.getString("name");
+			System.out.println("Spiel: "+gameName);
 			//extract "player" array as JSONString
-			String players = objTL.getString("players");
-			System.out.println("#debug: object lenght = "+objLenght);
-			System.out.println("#debug: players: "+players);
-			
+			JSONArray arrPlayers = objTL.getJSONArray("players");
+			//System.out.println("#debug: object lenght = "+objLenght);
+			System.out.println("");
+			System.out.println("#debug: players: "+arrPlayers);
+		  	JSONObject objPlayerIndextest = arrPlayers.getJSONObject(0);
+			System.out.println("");
+			System.out.println("#debug: objPlayerIndex[0]: "+objPlayerIndextest);
+
+
 			//convert player JSON to array
-			JSONArray arrPlayers = new JSONArray(players);
+			//JSONArray arrPlayers = new JSONArray(players);
 			Integer arrLenght = arrPlayers.length();
 			
 			//extract all players from array and define TL-points
 			for (int i = 0; i < arrLenght; ++i){
-			String arrString = arrPlayers.getString(i);
+			JSONObject objPlayerIndex = arrPlayers.getJSONObject(i);
+			
 			System.out.println("");
-			System.out.println("#debug: arrLenght = "+arrLenght);
-			System.out.println("#debug: arrIndex["+i+"] = "+arrString);
+			//System.out.println("#debug: arrLenght = "+arrLenght);
+			//System.out.println("#debug: arrIndex["+i+"] = "+arrString);
 			//convert extracted array index from string to Object
-			JSONObject objPlayer = new JSONObject(arrString);
-			Integer playerId = objPlayer.getInt("id");
+			
+			Integer playerId = objPlayerIndex.getInt("id");
 			System.out.println("playerId: "+playerId);
-			String playerName = objPlayer.getString("name");
+			String playerName = objPlayerIndex.getString("name");
 			System.out.println("playerName: "+playerName);
-			Integer playerRank = objPlayer.getInt("rank");
+			Integer playerRank = objPlayerIndex.getInt("rank");
 			System.out.println("playerRank: "+playerRank);
 			
 			//define Results/Points
-			Integer TeamLigaPoints = -404;
+			Integer TeamLigaPoints = null;
 			if (playerRank == 1){
 				TeamLigaPoints = 11;
 			}
