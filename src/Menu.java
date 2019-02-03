@@ -35,7 +35,14 @@ public class Menu
 		
 		switch (auswahl){
 			case "1":
+			    String case1 = "UserDaten";
 				System.out.println("#debug: case 1");
+				System.out.println("UserId oder UserNamen eingeben: ");
+				Scanner inputUser = new Scanner(System.in);
+				String user = inputUser.next();
+				System.out.println("");
+				KaroAPI requestUserData = new KaroAPI();
+				requestUserData.getUserInfo(user,case1);
 				break;
 			case "2":
 				String case2 = "TeamLigaGame";

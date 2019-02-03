@@ -47,6 +47,11 @@ public class KaroGetRequest
 					calcResult.calculateTL(result);
 				}
 				
+				if (caseOption.equals("UserDaten"))
+				{
+					KaroJsonHandler getUserData = new KaroJsonHandler();
+					getUserData.formatUserData(result);
+				}
 				
 				
 		}
