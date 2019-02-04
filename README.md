@@ -6,6 +6,7 @@ Der erste Stand wurde mobil mit "AIDE" geschrieben, wurde aber angepasst für al
 
 Aktuelle Funktionen:
 + Spielauswertung nach GID
++ Spielerinfo laden und anzeigen
 
 geplante Funktionen:
 + Spielerstellung
@@ -39,6 +40,7 @@ pacman-key --init
 
 pacman-key --populate archlinuxarm (wenn in Termux installiert)
 
+- funktioniert auch mit anderen Linux Distributionen die in Termux installiert werden können.
 
 Hinweis: Programmierkenntnisse habe ich mir selber angeeignet.
 Daher ist der Code nicht unbedingt der beste.
