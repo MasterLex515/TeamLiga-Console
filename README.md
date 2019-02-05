@@ -2,7 +2,8 @@
 TeamLiga~Console für Karopapier.de
 
 Die TeamLiga~Console übernimmt Aufgaben rund um die TeamLiga auf karopapier.de und ist eine Java-Consolen-Application.
-Der erste Stand wurde mobil mit "AIDE" geschrieben, wurde aber angepasst für allgemeine CLI mit OpenJDK.
+Programmierung mit OpenJDK und Compilierung über CLI.
+IDE-Projektstruktur z.B. für Eclipse/netbeans kommt evtl. später.
 
 Aktuelle Funktionen:
 + Spielauswertung nach GID
@@ -28,7 +29,7 @@ Ausführen innerhalb des src Ordners:
 Nutzung auf Android Geräten:
 + installiere Termux via GooglePlay
 + installiere ArchLinux in Termux (https://github.com/sdrausty/termux-archlinux)
-+ initialisiere pacman in ArchLinux (siehe Links am ende des Abschnitts)
++ initialisiere pacman in ArchLinux (siehe Links am ende des Abschnitts) wird bei aktualisiertem Install-Script automatisch durchgeführt.
 + installiere OpenJDK in ArchLinux via pacman
 Sollte es mit pacman anfangs Probleme geben können folgende Links helfen:
 
