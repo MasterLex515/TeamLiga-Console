@@ -1,4 +1,4 @@
-# C# library für Karopapier.de
+# TeamLiga~Console (Java)
 TeamLiga~Console für Karopapier.de
 
 Die TeamLiga~Console übernimmt Aufgaben rund um die TeamLiga auf karopapier.de und ist eine Java-Consolen-Application.
