@@ -9,12 +9,12 @@ public class Menu
 	public void printHeadPattern()
 	{
 		System.out.println("");
-		System.out.println("     ##############");
-		System.out.println("     #            #");
-		System.out.println("     #  TeamLiga  #");
-		System.out.println("     #  ~Console  #");
-		System.out.println("     #            #");
-		System.out.println("     ##############");
+		System.out.println("     #################");
+		System.out.println("     #   Team-Liga   #");
+		System.out.println("     #    Console    #");
+		System.out.println("     #               #");
+		System.out.println("     # Karopapier.de #");
+		System.out.println("     #################");
 		System.out.println("");
 	}
 	
@@ -22,7 +22,7 @@ public class Menu
 	{
 		System.out.println("1: lade User-Daten");
 		System.out.println("2: berechne TeamLiga-Spiel");
-		System.out.println("3: lade Spieldaten");
+		System.out.println("3: lade Spieldaten (noch nicht aktiv)");
 		System.out.println("");
 		
 	}

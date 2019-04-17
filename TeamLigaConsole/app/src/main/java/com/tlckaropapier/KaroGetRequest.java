@@ -58,4 +58,32 @@ public class KaroGetRequest
 				
 		}
 	}
+
+	public void karoPostRequest(String karoURL) throws IOException
+	{
+	    // TODO need to access cookies | append data to send
+
+	    System.out.println("post request goes here ...");
+
+        URL url = new URL(karoURL);
+        URLConnection con = url.openConnection();
+        HttpURLConnection http = (HttpURLConnection)con;
+        http.setRequestMethod("POST"); // PUT is another valid option
+        http.setDoOutput(true);
+
+		// sending json
+		byte[] out = "{\"username\":\"root\",\"password\":\"password\"}" .getBytes(StandardCharsets.UTF_8);
+        int length = out.length;
+        
+        http.setFixedLengthStreamingMode(length);
+        http.setRequestProperty("Content-Type", "application/json; charset=UTF-8");
+		http.connect();
+		try(OutputStream os = http.getOutputStream()) {
+		os.write(out);
+		}
+		// Do something with http.getInputStream()
+
+	
+	}
+
 }
