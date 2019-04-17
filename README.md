@@ -4,16 +4,19 @@ TeamLiga~Console für Karopapier.de
 Die TeamLiga~Console übernimmt Aufgaben rund um die TeamLiga auf karopapier.de und ist eine Java-Consolen-Application.
 Programmierung mit OpenJDK und Compilierung über CLI.
 IDE-Projektstruktur z.B. für Eclipse/netbeans kommt evtl. später.
+Dieses Repository beinhaltet aktuell eine Projektstruktur für "Java N IDE" for Android.
+Mit Java N IDE kann die Anwwendung auch direkt ausgeführt werden.
+Die Verwendung unter Windows oder mit Termux ist weiter unten beschrieben.
 
 Aktuelle Funktionen:
-+ Spielauswertung nach GID
++ Spielauswertung nach GID für TeamLiga Spiele
 + Spielerinfo laden und anzeigen
 
 geplante Funktionen:
 + Spielerstellung
 + Login mit Bot-Account
 + Teams erstellen/speichern
-+ Erstellung der Spielliste pro Saiso
++ Erstellung der Spielliste pro Saison
 + Nachricht an KaroChat senden
 + Dateien Erstellen, bearbeiten und speichern (DropBox, oder FTP-Zugang)
 
