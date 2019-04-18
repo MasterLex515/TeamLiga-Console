@@ -1,3 +1,5 @@
+package com.tlckaropapier;
+
 import java.util.*;
 import java.io.*;
 import java.io.IOException;
@@ -83,6 +85,7 @@ public class KaroJsonHandler
 	
 	public void formatUserData(String karoJsonString)
 	{
+	    try{
 		//code for JSON-formatting of user data
 		System.out.println("#debug: "+ karoJsonString);
 		System.out.println("");
@@ -111,8 +114,10 @@ public class KaroJsonHandler
 		System.out.println("spielegeil: "+playerDesperate);
 		Boolean playerBot = playerData.getBoolean("bot");
 		System.out.println("ist ein Bot: "+playerBot);
-		
-		
+		} catch (JSONException je)
+		{
+		  System.out.println(je);
+}
 	}
 	
 	

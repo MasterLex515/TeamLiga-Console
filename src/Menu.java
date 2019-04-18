@@ -1,18 +1,21 @@
-import java.util.*;
-import java.io.*;
+package com.tlckaropapier;
+
 //import KaroAPI;
+import com.tlckaropapier.KaroGetRequest;
+import java.io.*;
+import java.util.*;
 
 public class Menu
 {
 	public void printHeadPattern()
 	{
 		System.out.println("");
-		System.out.println("     ##############");
-		System.out.println("     #            #");
-		System.out.println("     #  TeamLiga  #");
-		System.out.println("     #  ~Console  #");
-		System.out.println("     #            #");
-		System.out.println("     ##############");
+		System.out.println("     #################");
+		System.out.println("     #   Team-Liga   #");
+		System.out.println("     #    Console    #");
+		System.out.println("     #               #");
+		System.out.println("     # Karopapier.de #");
+		System.out.println("     #################");
 		System.out.println("");
 	}
 	
@@ -20,7 +23,8 @@ public class Menu
 	{
 		System.out.println("1: lade User-Daten");
 		System.out.println("2: berechne TeamLiga-Spiel");
-		System.out.println("3: lade Spieldaten");
+		System.out.println("3: lade Spieldaten (noch nicht aktiv)");
+		System.out.println("4: login test");
 		System.out.println("");
 		
 	}
@@ -54,6 +58,15 @@ public class Menu
 				KaroAPI requestGameInfo = new KaroAPI();
 				requestGameInfo.getGameInfo(gid,case2);
 				break;
+			case "3":
+			    System.out.println("geht noch nicht!!!");
+			    break;
+			case "4":
+			    System.out.println("logging in ...");
+			    KaroGetRequest post = new KaroGetRequest();
+			    post.karoPostRequest();
+			    //KaroGetRequest.karoPostRequest();
+			    break;
 			default:
 			    System.out.println("#debug: default case");
 		}
