@@ -15,10 +15,11 @@ public class Main
 		//TODO create UI for karoAPI options
 		do {
 		Menu headline = new Menu();
+		
 		headline.printHeadPattern();
 		headline.menuOptions();
 		headline.chooseOption();
-		
+			
 		System.out.println("");
 		System.out.println("nochmal? (y/n): ");
 		Scanner input = new Scanner(System.in);
