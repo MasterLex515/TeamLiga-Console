@@ -105,7 +105,7 @@ public class KaroGetRequest
         http.setDoOutput(true);
 
 		// sending json
-		byte[] out = "{\"login\":\"MasterLex515\",\"password\":\"joghurt\"}" .getBytes(StandardCharsets.UTF_8);
+		byte[] out = "{\"login\":\"\",\"password\":\"\"}" .getBytes(StandardCharsets.UTF_8);
         int length = out.length;
         
         http.setFixedLengthStreamingMode(length);
