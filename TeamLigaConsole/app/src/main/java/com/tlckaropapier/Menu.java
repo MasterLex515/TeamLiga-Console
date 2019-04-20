@@ -1,6 +1,7 @@
 package com.tlckaropapier;
 
 //import KaroAPI;
+import com.tlckaropapier.KaroAPI;
 import com.tlckaropapier.KaroGetRequest;
 import java.io.*;
 import java.util.*;
@@ -21,11 +22,16 @@ public class Menu
 	
 	public void menuOptions()
 	{
+	    System.out.println("Optionen:");
+	    System.out.println("-----------");
 		System.out.println("1: lade User-Daten");
 		System.out.println("2: berechne TeamLiga-Spiel");
 		System.out.println("3: lade Spieldaten (noch nicht aktiv)");
 		System.out.println("4: login test");
+		System.out.println("5: logout");
+		System.out.println("6: CheckUser");
 		System.out.println("");
+		System.out.println("0: Exit");
 		
 	}
 	
@@ -59,13 +65,27 @@ public class Menu
 				requestGameInfo.getGameInfo(gid,case2);
 				break;
 			case "3":
+			    String case3 = "GameDaten";
 			    System.out.println("geht noch nicht!!!");
 			    break;
 			case "4":
+			    String case4 = "login";
 			    System.out.println("logging in ...");
 			    KaroGetRequest post = new KaroGetRequest();
 			    post.karoPostRequest();
 			    //KaroGetRequest.karoPostRequest();
+			    break;
+			case "5":
+			    String case5 = "logout";
+			    System.out.println("logging out ...");
+			    KaroAPI logout = new KaroAPI();
+			    logout.logout(case5);
+			    break;
+			case "6":
+			    String case6 = "checkUser";
+			    System.out.println("checking user ...");
+			    KaroAPI CheckUser = new KaroAPI();
+			    CheckUser.checkUser(case6);
 			    break;
 			default:
 			    System.out.println("#debug: default case");

@@ -1,6 +1,7 @@
 package com.tlckaropapier;
 
 //import KaroGetRequest;
+import com.tlckaropapier.KaroGetRequest;
 import java.io.IOException;
 
 //TODO create karoAPI alike karo-api-browser for Team-Liga
@@ -29,4 +30,12 @@ public class KaroAPI
 		karoRequest.karoGetRequest(karoLink, caseOption);
 	}
 	
+	public void logout (String caseOption) throws IOException
+	{
+	    String karoLink = "https://www.karopapier.de/abmelden.php";
+	    KaroGetRequest logoutRequest = new KaroGetRequest();
+	    logoutRequest.karoGetRequest(karoLink, caseOption);
+	}
 }
+	
+
